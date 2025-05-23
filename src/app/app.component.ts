@@ -4,7 +4,10 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root2',
   template: `<input type="text" />`,
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet,
+    InnerItem,
+  ],
    templateUrl: './app.component.html', 
   styleUrl: './app.component.css',
 })
