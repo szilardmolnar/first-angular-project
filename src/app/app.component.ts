@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 /** import { InneritemComponent } from './app/inneritem'; */
 /** import { Inneritem } from './inneritem'; */
 import { InneritemComponent } from './inneritem/inneritem.component';
+import axios from 'axios'; 
 
 @Component({
   selector: 'app-root2',
