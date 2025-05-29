@@ -8,6 +8,8 @@ import { RouterOutlet } from '@angular/router';
 import { InneritemComponent } from './inneritem/inneritem.component';
 import axios from 'axios'; 
 
+const concurrently = require('concurrently');
+
 @Component({
   selector: 'app-root2',
   template: `<input type="text" />`,
@@ -30,6 +32,11 @@ export class AppComponent {
   title = 'first-angular-project';
 
   CForm!: FormGroup;
+
+  ngOnInit() {
+    console.log("ngOnInit ");
+    concurrently();
+  }
 
   onSubmit() {} 
 }
