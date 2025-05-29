@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { FormGroup } from '@angular/forms';
 
@@ -15,12 +15,12 @@ import {concurrently} from "concurrently";
 
 @Component({
   selector: 'app-root2',
-  template: `<input type="text" />`,
+  template: `<form [formGroup]="CForm" (ngSubmit)="onSubmit()"><input type="text" /><button type=submit></button></form>`,
   imports: [
     RouterOutlet,
     InneritemComponent,
   ],
-   templateUrl: './app.component.html', 
+  //templateUrl: './app.component.html', 
   styleUrl: './app.component.css',
 })
 /**
@@ -31,15 +31,20 @@ import {concurrently} from "concurrently";
   styleUrl: './app.component.css',
 })
 */
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'first-angular-project';
 
   CForm!: FormGroup;
 
   ngOnInit() {
     console.log(" ngOnInit "+(new Date()).getTime());
-    //concurrently();
+    //const { result } = concurrently( ['console.log("c1")'], );
+    
   }
 
-  onSubmit() {} 
+  onSubmit() {
+    console.log(" onSubmit ");
+  } 
 }
+
+//export default concurrently;
