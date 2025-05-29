@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+
+import { FormGroup } from '@angular/forms';
+
 import { RouterOutlet } from '@angular/router';
 /** import { InneritemComponent } from './app/inneritem'; */
 /** import { Inneritem } from './inneritem'; */
@@ -25,6 +28,8 @@ import axios from 'axios';
 */
 export class AppComponent {
   title = 'first-angular-project';
+
+  CForm!: FormGroup;
 
   onSubmit() {} 
 }
