@@ -8,7 +8,10 @@ import { RouterOutlet } from '@angular/router';
 import { InneritemComponent } from './inneritem/inneritem.component';
 import axios from 'axios'; 
 
-const concurrently = require('concurrently');
+/** const concurrently = require('concurrently'); */
+//import * as concurrently from "concurrently";
+//import concurrently = require( "concurrently" );
+import {concurrently} from "concurrently";
 
 @Component({
   selector: 'app-root2',
@@ -34,8 +37,8 @@ export class AppComponent {
   CForm!: FormGroup;
 
   ngOnInit() {
-    console.log("ngOnInit ");
-    concurrently();
+    console.log(" ngOnInit "+(new Date()).getTime());
+    //concurrently();
   }
 
   onSubmit() {} 
