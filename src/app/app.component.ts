@@ -25,4 +25,6 @@ import axios from 'axios';
 */
 export class AppComponent {
   title = 'first-angular-project';
+
+  onSubmit() {} 
 }
