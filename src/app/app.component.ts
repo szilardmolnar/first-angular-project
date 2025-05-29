@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { RouterOutlet } from '@angular/router';
 /** import { InneritemComponent } from './app/inneritem'; */
@@ -13,9 +13,12 @@ import axios from 'axios';
 //import concurrently = require( "concurrently" );
 import {concurrently} from "concurrently";
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-root2',
-  template: `<form [formGroup]="CForm" (ngSubmit)="onSubmit()"><input type="text" /><button type=submit></button></form>`,
+  template: `<form (ngSubmit)="onSubmit()"><input type="text" /><button type="submit"></button></form>`,
   imports: [
     RouterOutlet,
     InneritemComponent,
