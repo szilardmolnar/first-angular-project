@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
-@Component({})
+@Component({
+  template: '',
+})
 export class AppComponent {
 }
