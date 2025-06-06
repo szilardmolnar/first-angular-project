@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import axios from 'axios';
 
 @Component({
   selector: 'a',
@@ -18,5 +19,10 @@ export class AppComponent {
 
   keyDownFunction(event: any) {
     console.log("keyDownFunction");
+
+    axios
+      .post('contact')
+      //.finally(() => {
+      //});
   }
 }
