@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: '',
+  selector: 'a',
   template: '<form (keydown)="keyDownFunction($event)"> <div>div</div>  </form>',
 })
 export class AppComponent {
