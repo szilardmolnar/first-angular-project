@@ -1,4 +1,10 @@
 import { NgModule } from '@angular/core';
+/*
+medium.com/@schaman762/integrating-angular-with-rest-apis-a-comprehensive-guide-d3a889e560c7
+*/
+imprt { HttpClientModule } from '@angular/common/http';
+
+..
 
 @NgModule({
   imports:      [ BrowserModule ],
